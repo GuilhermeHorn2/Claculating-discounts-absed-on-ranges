@@ -1,0 +1,26 @@
+v = int(input(':'))
+h = int(input(':'))
+s = v * h
+if s >= 2500:
+    ir = s*0.2
+elif s >= 1500:
+    ir = s*0.1
+elif s > 900:
+    ir = s*0.05
+else:
+    ir = 0
+
+inss = s*0.1
+fgts = s*0.11
+s2 = s - (inss  + ir)
+print('Slario bruto({}): '.format(h * v),s)
+print('ROUBO DO IR ({}%):'.format((ir/s)*100) ,ir)
+print('ROUBO DO INSS({}%):'.format((inss/s)*100),inss)
+print('ROUBO DO FGTS({}%):'.format((fgts/s)*100),fgts)
+print('Salario apos ROUBOS:',s2)
+
+
+
+
+
+
